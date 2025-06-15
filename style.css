@@ -38,7 +38,7 @@ body {
 }
 
 
-/* Header & Navigation */
+/*#region Header & Navigation */
 .header {
     /* background: var(--dark-color); */
     background: rgb(1, 63, 77);
@@ -68,11 +68,11 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+/*#endregion Header & Navigation */
 
-
-/* Navigation */
+/*#region Navigation */
 .navbar {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     position: sticky;
 
     background: rgba(0, 108, 133, 0.8);
@@ -89,6 +89,13 @@ body {
     /* color: var(--primary-color) !important; */
     color:white;
 }
+.navbar-brand img{
+ width:70px;
+ height:70px;
+ top:0px;
+ margin:0px;
+}
+
 
 .navbar-nav .nav-link {
     /* color: var(--dark-color) !important; */
@@ -102,29 +109,74 @@ body {
     color: var(--primary-color) !important;
     transform: translateY(-2px);
 }
+/*#endregion Navigation */
 
-/* Hero Section */
+/*#region Hero Section with Video Background */
 .hero {
-    background: linear-gradient(rgba(0, 168, 204, 0.8), rgba(0, 119, 182, 0.8));
+    position: relative;
     min-height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: white;
+}
+
+.video-background iframe {
+    width: 100vw;
+    height: 56.25vw; /* 16:9 aspect ratio */
+    min-height: 100vh;
+    min-width: 177.77vh; /* 16:9 aspect ratio */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 152, 219, 0.432);
+    z-index: -1;
+}
+
+.hero-content {
     position: relative;
+    z-index: 1;
     color: white;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
-    font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
+
 
 /* Buttons */
 .btn-primary {
@@ -171,7 +223,47 @@ body {
     transform: translateY(-2px);
 }
 
-/* Service Cards */
+/*#endregion Hero Section with Video Background */
+
+/*#region Form(rent car,taxi,...)*/
+    .booking-form {
+      background-color: #fff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      max-width: 600px;
+      margin: 0px auto;
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-control,
+    .form-select,
+    .btn {
+      border-radius: 0 !important;
+    }
+
+    .btn-outline-primary.active {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+
+    .btn-outline-primary {
+      border-radius: 0;
+    }
+
+    .form-label i {
+      margin-right: 5px;
+    }
+
+    .toggle-buttons {
+      margin-top: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+/*#endregion Form(rent car,taxi,...)*/
+
+
+/*#region Service Cards */
 .service-card {
     background: var(--white);
     border-radius: 20px;
@@ -234,7 +326,9 @@ body {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
-/* Tour Cards */
+/*#endregion Service Cards */
+
+/*#region Tour Cards */
 .tour-card {
     background: var(--white);
     border-radius: 15px;
@@ -256,8 +350,9 @@ body {
     color: var(--white);
     font-weight: 600;
 }
+ /*#endregion Tour Cards */
 
-/* Sections */
+/*#region Sections */
 .section-padding {
     padding: 100px 0;
 }
@@ -274,6 +369,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 3rem;
 }
+/*#endregion Sections */
 
 /* Stats Section */
 .stats-section {
@@ -330,6 +426,9 @@ body {
     .section-title {
         font-size: 2rem;
     }
+    .navbar{
+        position: fixed;
+    }
 }
 
 /* Image Placeholder */
@@ -344,324 +443,4 @@ body {
     font-weight: 600;
 }
 
-
-        /* Footer Styles */
-        .footer {
-            background: linear-gradient(135deg, var(--dark-color), #001845);
-            color: var(--white);
-            padding: 60px 0 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
-        }
-
-        .footer-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .footer-logo i {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-        }
-
-        .footer-section h5 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-section h5::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: var(--accent-color);
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 8px;
-        }
-
-        .footer-links a {
-            color: var(--light-color);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-color);
-            transform: translateX(5px);
-        }
-
-        .footer-links a i {
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-
-        .contact-info {
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateX(5px);
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .contact-icon i {
-            color: var(--white);
-            font-size: 1.2rem;
-        }
-
-        .contact-text {
-            flex: 1;
-        }
-
-        .contact-text strong {
-            display: block;
-            color: var(--white);
-            margin-bottom: 2px;
-        }
-
-        .contact-text span {
-            color: var(--light-color);
-            font-size: 0.9rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .social-link:hover {
-            background: var(--primary-color);
-            color: var(--white);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 168, 204, 0.4);
-        }
-
-        .newsletter-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 1rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .newsletter-form h6 {
-            color: var(--accent-color);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .newsletter-form p {
-            color: var(--light-color);
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
-
-        .newsletter-input {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .newsletter-input input {
-            flex: 1;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 25px;
-            background: rgba(255, 255, 255, 0.9);
-            color: var(--dark-color);
-            font-family: 'Comic Neue', cursive;
-        }
-
-        .newsletter-input input::placeholder {
-            color: var(--gray-dark);
-        }
-
-        .newsletter-btn {
-            background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
-            color: var(--white);
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .newsletter-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(247, 127, 0, 0.4);
-        }
-
-        .footer-bottom {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 20px 0;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .footer-bottom-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .copyright {
-            color: var(--light-color);
-            font-size: 0.9rem;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .footer-bottom-links a {
-            color: var(--light-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-bottom-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .footer {
-                padding: 40px 0 0;
-            }
-            
-            .footer-logo {
-                font-size: 1.5rem;
-                justify-content: center;
-                text-align: center;
-            }
-            
-            .footer-section {
-                text-align: center;
-                margin-bottom: 30px;
-            }
-            
-            .footer-section h5::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            
-            .contact-item {
-                justify-content: center;
-                text-align: left;
-            }
-            
-            .social-links {
-                justify-content: center;
-            }
-            
-            .newsletter-input {
-                flex-direction: column;
-            }
-            
-            .newsletter-btn {
-                align-self: center;
-                width: fit-content;
-            }
-            
-            .footer-bottom-content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        /* Demo Body Styles */
-        .demo-content {
-            padding: 50px 0;
-            text-align: center;
-            background: var(--gray-light);
-        }
-
-        .demo-content h1 {
-            color: var(--dark-color);
-            margin-bottom: 20px;
-        }
-
-        .demo-content p {
-            color: var(--gray-dark);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+/*#region Footer Styles */
