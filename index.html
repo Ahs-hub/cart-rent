@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageHub Mauritius - Car Rental & Tours</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Info -->
+    <div class="header">
+        <div class="header-info">
+            <div class="header-left">
+                <div class="header-item">
+                     <i class='bx bx-map'></i>
+                     <span>Tour Operator in Mauritius</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+230 55040167</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-time'></i>
+                    <span>24/7</span>
+                </div>
+            </div>
+            <!-- <div class="header-right">
+                <div class="header-item">
+                        <i class='bx bx-book'></i>
+                        <span>Tour Catalog 2025</span>
+                </div>
+            </div> -->
+        </div>
+     </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class='bx bx-car'></i> VoyageHub
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cars">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style ="position:fixed; z-index:-1;">
+        <img src="img/back2.png">
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- TO ADD YOUR BACKGROUND IMAGE: Replace the background property in .hero CSS with your image URL -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Discover Mauritius in Style</h1>
+                        <p class="lead">Premium car rentals, professional drivers, and unforgettable island tours. Experience the beauty of Mauritius with Island Drive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#services" class="btn btn-primary btn-lg">
+                                <i class='bx bx-car'></i> Rent a Car
+                            </a>
+                            <a href="#tours" class="btn btn-outline-light btn-lg">
+                                <i class='bx bx-map'></i> Book a Tour
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <!-- PLACEHOLDER FOR HERO IMAGE - Replace with your actual image -->
+                        <div class="img-placeholder" style="height: 400px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+                            <div>
+                                <i class='bx bx-car' style="font-size: 6rem; color: white; opacity: 0.8;"></i>
+                                <p style="color: white; margin-top: 20px;">Add your Mauritius landscape or car image here</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">
+                        From luxury car rentals to guided island tours, we provide everything you need for the perfect Mauritius experience
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-car'></i>
+                        </div>
+                        <h4>Car Rental</h4>
+                        <p>Choose from our fleet of well-maintained vehicles, from economy cars to luxury SUVs. Perfect for exploring Mauritius at your own pace.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class='bx bx-check text-success'></i> 24/7 Support</li>
+                            <li><i class='bx bx-check text-success'></i> Insurance Included</li>
+                            <li><i class='bx bx-check text-success'></i> Free Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-user'></i>
+                        </div>
+                        <h4>Driver Services</h4>
+                        <p>Professional, local drivers who know Mauritius inside out. Sit back, relax, and enjoy the scenic beauty while we handle the driving.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class='bx bx-check text-success'></i> Licensed Drivers</li>
+                            <li><i class='bx bx-check text-success'></i> Local Expertise</li>
+                            <li><i class='bx bx-check text-success'></i> Flexible Hours</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <h4>Island Tours</h4>
+                        <p>Discover the hidden gems of Mauritius with our guided tours. From pristine beaches to cultural landmarks, we'll show you the best of the island.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class='bx bx-check text-success'></i> Expert Guides</li>
+                            <li><i class='bx bx-check text-success'></i> Custom Itineraries</li>
+                            <li><i class='bx bx-check text-success'></i> Small Groups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style ="position:fixed; top:0; z-index: -1;">
+        <img src="img/back2.png">
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" style=" color:white;">Our Fleet</h2>
+                    <p class="section-subtitle" style=" color:white;">
+                        Choose from our diverse range of vehicles, all maintained to the highest standards
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-card">
+                        <!-- PLACEHOLDER FOR CAR IMAGE -->
+                        <div class="car-image">
+                                <img src="img/car/economy.jpg">
+                        </div>
+                        <div class="p-4">
+                            <h5>Economy Cars</h5>
+                            <p class="text-muted">Perfect for budget-conscious travelers</p>
+                            <ul class="list-unstyled">
+                                <li><i class='bx bx-user'></i> 4-5 Passengers</li>
+                                <li><i class='bx bx-gas-pump'></i> Fuel Efficient</li>
+                                <li><i class='bx bx-shield'></i> Manual/Automatic</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">From $25/day</span>
+                                <button class="btn btn-outline-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-card">
+                        <!-- PLACEHOLDER FOR SUV IMAGE -->
+                        <div class="car-image">
+                             <img src="img/car/suv.jpg">
+                        </div>
+                        <div class="p-4">
+                            <h5>SUVs & 4WD</h5>
+                            <p class="text-muted">Ideal for families and adventure seekers</p>
+                            <ul class="list-unstyled">
+                                <li><i class='bx bx-user'></i> 6-7 Passengers</li>
+                                <li><i class='bx bx-mountain'></i> All Terrain</li>
+                                <li><i class='bx bx-package'></i> Large Boot Space</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">From $45/day</span>
+                                <button class="btn btn-outline-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-card">
+                        <!-- PLACEHOLDER FOR LUXURY CAR IMAGE -->
+                        <div class="car-image">
+                            <img src="img/car/luxury.jpg">
+                        </div>
+                        <div class="p-4">
+                            <h5>Luxury Vehicles</h5>
+                            <p class="text-muted">Premium comfort and style</p>
+                            <ul class="list-unstyled">
+                                <li><i class='bx bx-diamond'></i> Premium Features</li>
+                                <li><i class='bx bx-shield-check'></i> Full Insurance</li>
+                                <li><i class='bx bx-support'></i> VIP Service</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">From $85/day</span>
+                                <button class="btn btn-outline-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="section-padding" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Popular Tours</h2>
+                    <p class="section-subtitle">
+                        Explore the wonders of Mauritius with our carefully crafted tour packages
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <!-- PLACEHOLDER FOR NORTH COAST IMAGE -->
+                        <div class="tour-image">
+                            <div class="text-center">
+                                <i class='bx bx-swim' style="font-size: 3rem;"></i>
+                                <p class="mb-0">Add North Coast Image Here</p>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>North Coast Adventure</h5>
+                            <p class="text-muted">Explore Grand Baie, Mont Choisy Beach, and the famous Red Roof Church</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class='bx bx-time-five text-primary me-2'></i>
+                                <span>Full Day (8 hours)</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$60/person</span>
+                                <button class="btn btn-primary">Book Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <!-- PLACEHOLDER FOR SOUTH COAST IMAGE -->
+                        <div class="tour-image">
+                            <div class="text-center">
+                                <i class='bx bx-landscape' style="font-size: 3rem;"></i>
+                                <p class="mb-0">Add South Coast Image Here</p>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>South Coast Wonders</h5>
+                            <p class="text-muted">Visit Chamarel, Seven Coloured Earths, and breathtaking waterfalls</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class='bx bx-time-five text-primary me-2'></i>
+                                <span>Full Day (8 hours)</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$65/person</span>
+                                <button class="btn btn-primary">Book Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <!-- PLACEHOLDER FOR PORT LOUIS IMAGE -->
+                        <div class="tour-image">
+                            <div class="text-center">
+                                <i class='bx bx-buildings' style="font-size: 3rem;"></i>
+                                <p class="mb-0">Add Port Louis Image Here</p>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Port Louis Cultural Tour</h5>
+                            <p class="text-muted">Discover the capital's markets, museums, and colonial architecture</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class='bx bx-time-five text-primary me-2'></i>
+                                <span>Half Day (4 hours)</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$35/person</span>
+                                <button class="btn btn-primary">Book Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section section-padding" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <div class="stat-label">Vehicles Available</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <div class="stat-label">Tour Packages</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">About VoyageHub</h2>
+                    <p class="section-subtitle">Your trusted partner for exploring Mauritius</p>
+                    <p>With years of experience in the Mauritius tourism industry, VoyageHub has established itself as a premier car rental and tour operator. We pride ourselves on providing exceptional service, reliable vehicles, and unforgettable experiences.</p>
+                    <p>Our team of local experts knows every corner of this beautiful island and is passionate about sharing its wonders with visitors from around the world.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class='bx bx-shield-check text-primary fs-3 me-3'></i>
+                                <div>
+                                    <h6 class="mb-0">Fully Licensed</h6>
+                                    <small class="text-muted">Certified & Insured</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class='bx bx-support text-primary fs-3 me-3'></i>
+                                <div>
+                                    <h6 class="mb-0">24/7 Support</h6>
+                                    <small class="text-muted">Always Here for You</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- PLACEHOLDER FOR ABOUT IMAGE -->
+                    <div class="img-placeholder" style="height: 400px;">
+                        <div class="text-center">
+                            <i class='bx bx-buildings' style="font-size: 4rem; color: var(--primary-color);"></i>
+                            <p class="mt-3">Add company or team image here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">
+                        Ready to start your Mauritius adventure? Get in touch with us today!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <h5>Phone</h5>
+                        <p class="text-muted">+230 55040167<br>Available 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p class="text-muted">info@VoyageHub.mu<br>Quick Response</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="service-icon mx-auto">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <h5>Location</h5>
+                        <p class="text-muted">Mauritius Island<br>Pickup Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
+
+
