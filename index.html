@@ -33,20 +33,20 @@
                     <span>24/7</span>
                 </div>
             </div>
-            <!-- <div class="header-right">
+            <div class="header-right">
                 <div class="header-item">
                         <i class='bx bx-book'></i>
                         <span>Tour Catalog 2025</span>
                 </div>
-            </div> -->
+            </div>
         </div>
      </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <i class='bx bx-car'></i> VoyageHub
-                
+                <!-- <i class='bx bx-car'></i> -->
+                     <img src="img/logo1.png">
             </a>
             <!-- Toggler Button -->
             <button class="navbar-toggler no-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -71,42 +71,46 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#rodrigues">Rodrigues</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Rodrigues Offer</a>
+                        <a class="nav-link" href="#event_planner">Event Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section style ="position:fixed; z-index:-1;">
+    <section style ="position:fixed; z-index:-2; top:0;">
         <img src="img/back2.png">
     </section>
+    
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- TO ADD YOUR BACKGROUND IMAGE: Replace the background property in .hero CSS with your image URL -->
-        <div class="container">
+        <div class="video-background">
+            <iframe src="https://www.youtube.com/embed/nx7j0ZAUvjY?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=nx7j0ZAUvjY"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container content">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1>Discover Mauritius in Style</h1>
-                        <p class="lead">Premium car rentals, professional drivers, and unforgettable island tours. Experience the beauty of Mauritius with VoyageHub.</p>
-                        <div class="d-flex flex-wrap gap-3">
-                            <a href="#services" class="btn btn-primary btn-lg">
-                                <i class='bx bx-car'></i> Rent a Car
-                            </a>
-                            <a href="#tours" class="btn btn-outline-light btn-lg">
-                                <i class='bx bx-map'></i> Book a Tour
-                            </a>
-                        </div>
-                    </div>
+                <div style="color:white">  
+                     <p class="lead">#IslandVibesUnleashed</p>
+                    <h1>Let mauritius Vacation be your next escape</h1>
                 </div>
-                <div class="col-lg-6">
+                     
+                </div>
+                <!-- <div class="col-lg-6">
                     <div class="text-center">
-                        <!-- PLACEHOLDER FOR HERO IMAGE - Replace with your actual image -->
+                        
                         <div class="img-placeholder" style="height: 400px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
                             <div>
                                 <i class='bx bx-car' style="font-size: 6rem; color: white; opacity: 0.8;"></i>
@@ -115,8 +119,133 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                <div class="container-form">
+                    <!-- TOGGLE BUTTONS -->
+                    <div class="d-flex justify-content-center toggle-buttons">
+                        <button id="taxiBtn" class="btn btn-outline-primary active"><i class='bx bx-taxi'></i> Taxi</button>
+                        <button id="rentCarBtn" class="btn btn-outline-primary"><i class='bx bx-car'></i> Rent Car</button>
+                        <button id="sightseeingBtn" class="btn btn-outline-primary"><i class='bx bx-camera'></i> Sightseeing</button>
+                        <button id="activitiesBtn" class="btn btn-outline-primary"><i class='bx bx-joystick'></i> Activities</button>
+                    </div>
+        
+                    <!--                ***** form(Taxi,rent)  ****     -->
+                    <!-- <div class="col-lg-6"> -->
+                        <!-- TAXI FORM -->
+                        <form id="taxiForm" class="booking-form">                    
+                            <div class="mb-3">
+                            <label for="pickupLocationTaxi" class="form-label"><i class='bx bx-map-pin'></i> Pickup Location</label>
+                            <select class="form-select" id="pickupLocationTaxi" required>
+                                <option value="">Select location...</option>
+                                <option>Port Louis</option>
+                                <option>Grand Baie</option>
+                                <option>Flic en Flac</option>
+                                <option>Airport</option>
+                            </select>
+                            </div>
+                        
+                            <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="pickupDateTaxi" class="form-label"><i class='bx bx-calendar'></i> Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDateTaxi" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="pickupTimeTaxi" class="form-label"><i class='bx bx-time-five'></i> Pickup Time</label>
+                                <input type="time" class="form-control" id="pickupTimeTaxi" required>
+                            </div>
+                            </div>
+                        
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class='bx bx-search-alt'></i> Find a Taxi
+                            </button>
+                            </div>
+                        </form>
+                        
+                        <!-- RENT CAR FORM -->
+                        <form id="rentCarForm" class="booking-form d-none">
+                            <div class="mb-3">
+                            <label for="pickupLocationCar" class="form-label"><i class='bx bx-map-pin'></i> Pickup Location</label>
+                            <select class="form-select" id="pickupLocationCar" required>
+                                <option value="">Select location...</option>
+                                <option>Port Louis</option>
+                                <option>Grand Baie</option>
+                                <option>Airport</option>
+                            </select>
+                            </div>
+                        
+                            <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="sameLocationCheck" checked>
+                            <label class="form-check-label" for="sameLocationCheck">Return to same location</label>
+                            </div>
+                        
+                            <div class="mb-3" id="returnLocationGroup" style="display: none;">
+                            <label for="returnLocationCar" class="form-label"><i class='bx bx-map-pin'></i> Return Location</label>
+                            <select class="form-select" id="returnLocationCar">
+                                <option value="">Select location...</option>
+                                <option>Port Louis</option>
+                                <option>Grand Baie</option>
+                                <option>Airport</option>
+                            </select>
+                            </div>
+                        
+                            <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="pickupDateCar" class="form-label"><i class='bx bx-calendar'></i> Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDateCar" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="returnDateCar" class="form-label"><i class='bx bx-calendar'></i> Return Date</label>
+                                <input type="date" class="form-control" id="returnDateCar" required>
+                            </div>
+                            </div>
+                        
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class='bx bx-car'></i> Rent a Car
+                            </button>
+                            </div>
+                        </form>
+                        
+                        <!-- SIGHTSEEING FORM -->
+                        <form id="sightseeingForm" class="booking-form d-none">
+                            <div class="mb-3">
+                            Explore our signature sightseeing tours with a friendly chauffeur.<br>
+                            Choose from preset itineraries or customize your own adventure!
+                            </div>
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class='bx bx-book-content'></i> View Catalogue
+                            </button>
+                            </div>
+                        </form>
+                        
+                        <!-- ACTIVITIES FORM -->
+                        <form id="activitiesForm" class="booking-form d-none">
+                            <div class="mb-3">
+                            Carefully curated experiences for everyone — from parasailing at Île aux Cerfs to quad biking and more.<br>
+                            Discover the thrill of Mauritius with us!
+                            </div>
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class='bx bx-book-content'></i> View Activities
+                            </button>
+                            </div>
+                        </form>
+        
+                    </div>
+                    <!--    end         ***** form  ****     -->
+
+
+            
+
             </div>
+        </div>
+    </section>
+
+    <section style="position:absolute; top: 50%; right: 0px; background-color: red;">
+
         </div>
     </section>
 
@@ -179,10 +308,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section style ="position:fixed; top:0; z-index: -1;">
-        <img src="img/back2.png">
     </section>
 
     <!-- Cars Section -->
@@ -264,6 +389,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-center" style="margin-top:100px;">
+            <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-car-front-fill me-2"></i>
+                View All
+            </button>
         </div>
     </section>
 
@@ -352,6 +483,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-center" style="margin-top: 100px;">
+            <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-car-front-fill me-2"></i>
+                View All Tours ->
+            </button>
         </div>
     </section>
 
@@ -641,7 +778,6 @@
     <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
