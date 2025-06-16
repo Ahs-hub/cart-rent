@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //#endregion harmburger -> cross
 
 
+
 //#region Form (rent,taxi,...)
 const forms = {
     taxiBtn: "taxiForm",
