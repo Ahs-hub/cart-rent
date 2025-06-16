@@ -17,19 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //#endregion harmburger -> cross
 
-//#region Newsletter Form Handler
-
-    document.querySelector('.newsletter-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-        const email = document.querySelector('.newsletter-input input').value;
-        if (email) {
-            alert('Thank you for subscribing! We\'ll keep you updated with our latest offers.');
-            document.querySelector('.newsletter-input input').value = '';
-        } else {
-            alert('Please enter a valid email address.');
-        }
-    });
-//#endregion Newsletter Form Handler
 
 //#region Form (rent,taxi,...)
 const forms = {
