@@ -227,7 +227,7 @@ body {
 
 /*#region Form(rent car,taxi,...)*/
     .booking-form {
-      background-color: #fff;
+      background-color: #bdd2dd;
       padding: 30px;
       border: 1px solid #ddd;
       max-width: 600px;
@@ -236,19 +236,35 @@ body {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
-    .form-control,
+    /* .form-control,
     .form-select,
     .btn {
       border-radius: 0 !important;
+    } */
+    .rad-0{
+        border-radius: 0 !important;
     }
 
-    .btn-outline-primary.active {
-      background-color: #0d6efd;
-      color: #fff;
-    }
-
+    /* Apply to all outline-primary buttons */
     .btn-outline-primary {
-      border-radius: 0;
+        background-color: rgb(1, 63, 77);
+        color: #fff;
+        border: none;
+    }
+    
+    /* On hover/focus */
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus {
+        background-color: rgb(2, 85, 100);
+        color: #fff;
+        border: none;
+    }
+    
+    /* Active button styling */
+    .btn-outline-primary.active {
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
     }
 
     .form-label i {
