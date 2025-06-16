@@ -124,10 +124,10 @@
                 <div class="container-form">
                     <!-- TOGGLE BUTTONS -->
                     <div class="d-flex justify-content-center toggle-buttons">
-                        <button id="taxiBtn" class="btn btn-outline-primary active"><i class='bx bx-taxi'></i> Taxi</button>
-                        <button id="rentCarBtn" class="btn btn-outline-primary"><i class='bx bx-car'></i> Rent Car</button>
-                        <button id="sightseeingBtn" class="btn btn-outline-primary"><i class='bx bx-camera'></i> Sightseeing</button>
-                        <button id="activitiesBtn" class="btn btn-outline-primary"><i class='bx bx-joystick'></i> Activities</button>
+                        <button id="taxiBtn" class="btn btn-outline-primary rad-0 active"><i class='bx bx-taxi'></i> Taxi</button>
+                        <button id="rentCarBtn" class="btn btn-outline-primary rad-0"><i class='bx bx-car'></i> Rent Car</button>
+                        <button id="sightseeingBtn" class="btn btn-outline-primary rad-0"><i class='bx bx-camera'></i> Sightseeing</button>
+                        <button id="activitiesBtn" class="btn btn-outline-primary rad-0"><i class='bx bx-joystick'></i> Activities</button>
                     </div>
         
                     <!--                ***** form(Taxi,rent)  ****     -->
@@ -135,7 +135,7 @@
                         <!-- TAXI FORM -->
                         <form id="taxiForm" class="booking-form">                    
                             <div class="mb-3">
-                            <label for="pickupLocationTaxi" class="form-label"><i class='bx bx-map-pin'></i> Pickup Location</label>
+                            <label for="pickupLocationTaxi" class="form-label"><i class='bx bx-map'></i> Pickup Location</label>
                             <select class="form-select" id="pickupLocationTaxi" required>
                                 <option value="">Select location...</option>
                                 <option>Port Louis</option>
@@ -158,7 +158,7 @@
                         
                             <div class="text-center">
                             <button type="submit" class="btn btn-primary w-100">
-                                <i class='bx bx-search-alt'></i> Find a Taxi
+                                 Next
                             </button>
                             </div>
                         </form>
@@ -166,7 +166,7 @@
                         <!-- RENT CAR FORM -->
                         <form id="rentCarForm" class="booking-form d-none">
                             <div class="mb-3">
-                            <label for="pickupLocationCar" class="form-label"><i class='bx bx-map-pin'></i> Pickup Location</label>
+                            <label for="pickupLocationCar" class="form-label"><i class='bx bx-map'></i> Pickup Location</label>
                             <select class="form-select" id="pickupLocationCar" required>
                                 <option value="">Select location...</option>
                                 <option>Port Louis</option>
@@ -181,7 +181,7 @@
                             </div>
                         
                             <div class="mb-3" id="returnLocationGroup" style="display: none;">
-                            <label for="returnLocationCar" class="form-label"><i class='bx bx-map-pin'></i> Return Location</label>
+                            <label for="returnLocationCar" class="form-label"><i class='bx bx-map'></i></i> Return Location</label>
                             <select class="form-select" id="returnLocationCar">
                                 <option value="">Select location...</option>
                                 <option>Port Louis</option>
@@ -202,8 +202,8 @@
                             </div>
                         
                             <div class="text-center">
-                            <button type="submit" class="btn btn-success w-100">
-                                <i class='bx bx-car'></i> Rent a Car
+                            <button type="submit" class="btn btn-primary w-100">
+                                Rent a Car
                             </button>
                             </div>
                         </form>
@@ -215,8 +215,8 @@
                             Choose from preset itineraries or customize your own adventure!
                             </div>
                             <div class="text-center">
-                            <button type="submit" class="btn btn-success w-100">
-                                <i class='bx bx-book-content'></i> View Catalogue
+                            <button type="submit" class="btn btn-primary w-100">
+                                 View Catalogue
                             </button>
                             </div>
                         </form>
@@ -225,11 +225,11 @@
                         <form id="activitiesForm" class="booking-form d-none">
                             <div class="mb-3">
                             Carefully curated experiences for everyone — from parasailing at Île aux Cerfs to quad biking and more.<br>
-                            Discover the thrill of Mauritius with us!
+                            Discover the thrill of Mauritius with us!🏄‍♂️
                             </div>
                             <div class="text-center">
-                            <button type="submit" class="btn btn-success w-100">
-                                <i class='bx bx-book-content'></i> View Activities
+                            <button type="submit" class="btn btn-primary w-100">
+                                 View Activities
                             </button>
                             </div>
                         </form>
@@ -325,17 +325,19 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="car-card">
-                        <!-- PLACEHOLDER FOR CAR IMAGE -->
+                        <!-- SUZUKI CELERIO IMAGE -->
                         <div class="car-image">
-                                <img src="img/car/economy.jpg">
+                            <img src="img/car/suzuki_celerio.jpg" alt="Suzuki Celerio">
                         </div>
                         <div class="p-4">
-                            <h5>Economy Cars</h5>
-                            <p class="text-muted">Perfect for budget-conscious travelers</p>
+                            <h5>Suzuki Celerio</h5>
+                            <p class="text-muted">Compact 1000cc - Automatic - Gasoline</p>
                             <ul class="list-unstyled">
-                                <li><i class='bx bx-user'></i> 4-5 Passengers</li>
-                                <li><i class='bx bx-gas-pump'></i> Fuel Efficient</li>
-                                <li><i class='bx bx-shield'></i> Manual/Automatic</li>
+                                <li><i class='bx bx-user'></i> 4 Passengers</li>
+                                <li><i class='bx bx-gas-pump'></i> Petrol</li>
+                                <li><i class='bx bx-cog'></i> Automatic</li>
+                                <li><i class='bx bx-palette'></i> Color: Blue</li>
+                                <li><i class='bx bx-calendar'></i> Model: 2022–2025</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 text-primary mb-0">From $25/day</span>
@@ -345,49 +347,56 @@
                     </div>
                 </div>
                 
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="car-card">
-                        <!-- PLACEHOLDER FOR SUV IMAGE -->
+                        <!-- SUZUKI SWIFT IMAGE -->
                         <div class="car-image">
-                             <img src="img/car/suv.jpg">
+                            <img src="img/car/suzuki_swift.jpg" alt="Suzuki Swift">
                         </div>
                         <div class="p-4">
-                            <h5>SUVs & 4WD</h5>
-                            <p class="text-muted">Ideal for families and adventure seekers</p>
+                            <h5>Suzuki Swift</h5>
+                            <p class="text-muted">Compact 1300cc - Automatic - Gasoline</p>
                             <ul class="list-unstyled">
-                                <li><i class='bx bx-user'></i> 6-7 Passengers</li>
-                                <li><i class='bx bx-mountain'></i> All Terrain</li>
-                                <li><i class='bx bx-package'></i> Large Boot Space</li>
+                                <li><i class='bx bx-user'></i> 5 Passengers</li>
+                                <li><i class='bx bx-gas-pump'></i> Petrol</li>
+                                <li><i class='bx bx-cog'></i> Automatic</li>
+                                <li><i class='bx bx-palette'></i> Color: Blue</li>
+                                <li><i class='bx bx-calendar'></i> Model: 2022–2025</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 text-primary mb-0">From $45/day</span>
+                                <span class="h5 text-primary mb-0">From $25/day</span>
                                 <button class="btn btn-outline-primary">Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="car-card">
-                        <!-- PLACEHOLDER FOR LUXURY CAR IMAGE -->
+                        <!-- SUZUKI S-PRESSO IMAGE -->
                         <div class="car-image">
-                            <img src="img/car/luxury.jpg">
+                            <img src="img/car/suzuki_spresso.jpg" alt="Suzuki S-Presso">
                         </div>
                         <div class="p-4">
-                            <h5>Luxury Vehicles</h5>
-                            <p class="text-muted">Premium comfort and style</p>
+                            <h5>Suzuki S-Presso</h5>
+                            <p class="text-muted">Compact - Automatic - Gasoline</p>
                             <ul class="list-unstyled">
-                                <li><i class='bx bx-diamond'></i> Premium Features</li>
-                                <li><i class='bx bx-shield-check'></i> Full Insurance</li>
-                                <li><i class='bx bx-support'></i> VIP Service</li>
+                                <li><i class='bx bx-user'></i> 5 Passengers</li>
+                                <li><i class='bx bx-gas-pump'></i> Petrol</li>
+                                <li><i class='bx bx-cog'></i> Automatic</li>
+                                <li><i class='bx bx-palette'></i> Colors: Black / Grey</li>
+                                <li><i class='bx bx-calendar'></i> Model: 2022–2025</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 text-primary mb-0">From $85/day</span>
+                                <span class="h5 text-primary mb-0">From $25/day</span>
                                 <button class="btn btn-outline-primary">Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="text-center" style="margin-top:100px;">
@@ -778,6 +787,8 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
