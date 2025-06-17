@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//#region Form (rent,taxi,...)
+//#region    Form (rent,taxi,...)
 const forms = {
     taxiBtn: "taxiForm",
     rentCarBtn: "rentCarForm",
@@ -43,3 +43,20 @@ const forms = {
     document.getElementById('returnLocationGroup').style.display = this.checked ? 'none' : 'block';
   });
 //#endregion Form (rent,taxi,...)
+
+//#region        carousel
+const swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
+//#endregion     carousel
