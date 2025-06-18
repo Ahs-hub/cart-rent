@@ -66,12 +66,16 @@ const swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   loop: true,
-  coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+  autoplay: {
+    delay: 3000,         // Time between slides in milliseconds (3000 = 3 seconds)
+    disableOnInteraction: false,  // Keeps autoplay after user swipes
   },
- });
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
 //#endregion Carousel
