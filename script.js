@@ -1,26 +1,28 @@
-//#region harmburger -> cross
+//#region Hamburger Icon Toggle
 document.addEventListener('DOMContentLoaded', function () {
-    const toggler = document.querySelector('.navbar-toggler');
-    const icon = toggler.querySelector('.icon-toggler');
-    const navCollapse = document.querySelector('#navbarNav');
+  const toggler = document.querySelector('.navbar-toggler');
+  if (!toggler) return;
 
-    // Toggle icon on collapse event
+  const icon = toggler.querySelector('.icon-toggler');
+  const navCollapse = document.querySelector('#navbarNav');
+
+  if (navCollapse) {
     navCollapse.addEventListener('show.bs.collapse', function () {
-        icon.classList.remove('bx-menu');
-        icon.classList.add('bx-x');
+      icon.classList.remove('bx-menu');
+      icon.classList.add('bx-x');
     });
 
     navCollapse.addEventListener('hide.bs.collapse', function () {
-        icon.classList.remove('bx-x');
-        icon.classList.add('bx-menu');
+      icon.classList.remove('bx-x');
+      icon.classList.add('bx-menu');
     });
+  }
 });
-//#endregion harmburger -> cross
+//#endregion Hamburger Icon Toggle
 
-
-
-//#region    Form (rent,taxi,...)
-const forms = {
+//#region Form Toggle (Taxi, Rent Car, Sightseeing, Activities)
+document.addEventListener('DOMContentLoaded', function () {
+  const forms = {
     taxiBtn: "taxiForm",
     rentCarBtn: "rentCarForm",
     sightseeingBtn: "sightseeingForm",
@@ -28,23 +30,36 @@ const forms = {
   };
 
   Object.keys(forms).forEach(btnId => {
-    document.getElementById(btnId).addEventListener("click", function () {
-      // Set active button
-      Object.keys(forms).forEach(b => {
-        document.getElementById(b).classList.remove("active");
-        document.getElementById(forms[b]).classList.add("d-none");
+    const btn = document.getElementById(btnId);
+    const formId = forms[btnId];
+
+    if (btn && document.getElementById(formId)) {
+      btn.addEventListener("click", function () {
+        // Reset all buttons and forms
+        Object.keys(forms).forEach(b => {
+          document.getElementById(b).classList.remove("active");
+          document.getElementById(forms[b]).classList.add("d-none");
+        });
+
+        // Activate selected
+        this.classList.add("active");
+        document.getElementById(formId).classList.remove("d-none");
       });
-      this.classList.add("active");
-      document.getElementById(forms[btnId]).classList.remove("d-none");
+    }
+  });
+
+  const sameLocationCheck = document.getElementById('sameLocationCheck');
+  const returnLocationGroup = document.getElementById('returnLocationGroup');
+
+  if (sameLocationCheck && returnLocationGroup) {
+    sameLocationCheck.addEventListener('change', function () {
+      returnLocationGroup.style.display = this.checked ? 'none' : 'block';
     });
-  });
+  }
+});
+//#endregion Form Toggle
 
-  document.getElementById('sameLocationCheck').addEventListener('change', function () {
-    document.getElementById('returnLocationGroup').style.display = this.checked ? 'none' : 'block';
-  });
-//#endregion Form (rent,taxi,...)
-
-//#region        carousel
+//#region Carousel (Empty Region - add your logic here)
 const swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -52,11 +67,11 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
   coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
   },
-});
-//#endregion     carousel
+ });
+//#endregion Carousel
