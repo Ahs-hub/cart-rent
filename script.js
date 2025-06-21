@@ -60,22 +60,52 @@ document.addEventListener('DOMContentLoaded', function () {
 //#endregion Form Toggle
 
 //#region Carousel (Empty Region - add your logic here)
-const swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
-  autoplay: {
-    delay: 3000,         // Time between slides in milliseconds (3000 = 3 seconds)
-    disableOnInteraction: false,  // Keeps autoplay after user swipes
-  },
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-});
+        // Initialize Swiper
+        const swiper = new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+              640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+              },
+              1200: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+              },
+          },
+      });
+
+      // Add click handlers for buttons
+      document.querySelectorAll('.square-yellow-btn').forEach(button => {
+          button.addEventListener('click', function() {
+              const serviceName = this.closest('.car-card').querySelector('h5').textContent;
+              alert(`Learn more about: ${serviceName}`);
+          });
+      });
+
+      document.querySelector('.view-all-btn').addEventListener('click', function() {
+          alert('Redirecting to all services page...');
+      });
 //#endregion Carousel
