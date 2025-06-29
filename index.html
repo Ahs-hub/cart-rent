@@ -11,11 +11,11 @@
     <!-- Boxicons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- google font comic -->
+    <!-- Google Font comic -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts poppins,lato,Open_sans,Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
      <!-- Swiper CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Header Info -->
-    <div class="header">
+    <div class="header navbars-links">
         <div class="header-info">
             <div class="header-left">
                 <div class="header-item">
@@ -53,7 +53,7 @@
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <!-- <i class='bx bx-car'></i> -->
-                     <img src="img/logo1.png">
+                     <img src="img/logo3.png">
             </a>
             <div class="header-item phone-appear" style="color:white;">
                 <i class='bx bx-phone'></i>
@@ -64,7 +64,7 @@
                 <i class='bx bx-menu icon-toggler'></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse navbars-links" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
@@ -73,35 +73,42 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cars">Cars</a>
+                        <a class="nav-link" href="#cars">Our Fleet</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#tours">Tours</a>
-                    </li>
+                    </li>     
+
                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Wishlist</a>
+                    </li>
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#rodrigues">Rodrigues</a>
+                        <a class="nav-link" href="#event_planner">EN/EUR</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#event_planner">Event Planner</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item" style="display: flex;  align-items: center;">
-                       <button class="btn btn-outline-primary">Login</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Profile</a>
                     </li>
+                    <!-- <li class="nav-item" style="display: flex;  align-items: center;">
+                       <button class="btn btn-outline-primary">Login</button>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section style ="position:fixed; z-index:-2; top:0;">
+    <!-- <section style ="position:fixed; z-index:-2; top:0;">
         <img src="img/pexels-back1.png">
     </section>
-    
+     -->
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -119,13 +126,13 @@
         </iframe>
         
         </div>
-        <div class="hero-overlay"></div>
+        <!-- <div class="hero-overlay"></div> -->
 
         <div class="container content">
             <div class="row align-items-center">
                 <div style="color:white">  
-                     <p class="lead">#IslandVibesUnleashed</p>
-                    <h1>Let mauritius Vacation be your next escape</h1>
+                     <!-- <p class="lead caption-label">#IslandVibesUnleashed</p> -->
+                    <h1 class="hero-title">Let mauritius Vacation be your next escape</h1>
                 </div>
                      
                 </div>
@@ -142,310 +149,110 @@
                     </div>
                 </div> -->
 
-                <div class="container-form">
-                    <!-- TOGGLE BUTTONS -->
-                    <div class="d-flex justify-content-center toggle-buttons">
-                        <button id="taxiBtn" class="btn  btn-form rad-0 active"><i class='bx bx-taxi'></i> Taxi</button>
-                        <button id="rentCarBtn" class="btn  btn-form rad-0"><i class='bx bx-car'></i> Rent Car</button>
-                        <button id="sightseeingBtn" class="btn  btn-form rad-0"><i class='bx bx-camera'></i> Sightseeing</button>
-                        <button id="activitiesBtn" class="btn  btn-form rad-0"><i class='bx bx-joystick'></i> Activities</button>
-                    </div>
-        
-                    <!--                ***** form(Taxi,rent)  ****     -->
-                    <!-- <div class="col-lg-6"> -->
-                        <!-- TAXI FORM -->
-                        <form id="taxiForm" class="booking-form">                    
-                            <div class="mb-3">
-                            <label for="pickupLocationTaxi" class="form-label"><i class='bx bx-map'></i> Pickup Location</label>
-                            <select class="form-select" id="pickupLocationTaxi" required>
-                                <option value="">Select location...</option>
-                                <option>Port Louis</option>
-                                <option>Grand Baie</option>
-                                <option>Flic en Flac</option>
-                                <option>Airport</option>
-                            </select>
-                            </div>
-                        
-                            <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="pickupDateTaxi" class="form-label"><i class='bx bx-calendar'></i> Pickup Date</label>
-                                <input type="date" class="form-control" id="pickupDateTaxi" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="pickupTimeTaxi" class="form-label"><i class='bx bx-time-five'></i> Pickup Time</label>
-                                <input type="time" class="form-control" id="pickupTimeTaxi" required>
-                            </div>
-                            </div>
-                        
-                            <div class="text-center">
-                            <button type="submit" class="btn btn-primary rad-0">
-                                 Next
-                            </button>
-                            </div>
-                        </form>
-                        
-                        <!-- RENT CAR FORM -->
-                        <form id="rentCarForm" class="booking-form d-none">
-                            <div class="mb-3">
-                            <label for="pickupLocationCar" class="form-label"><i class='bx bx-map'></i> Pickup Location</label>
-                            <select class="form-select" id="pickupLocationCar" required>
-                                <option value="">Select location...</option>
-                                <option>Port Louis</option>
-                                <option>Grand Baie</option>
-                                <option>Airport</option>
-                            </select>
-                            </div>
-                        
-                            <div class="form-check form-switch mb-3" style="display:flex; gap:20px;">
-                            <input class="form-check-input" type="checkbox" id="sameLocationCheck" checked>
-                            <label class="form-check-label" for="sameLocationCheck">Return to same location</label>
-                            </div>
-                        
-                            <div class="mb-3" id="returnLocationGroup" style="display: none;">
-                            <label for="returnLocationCar" class="form-label"><i class='bx bx-map'></i>Return Location</label>
-                            <select class="form-select" id="returnLocationCar">
-                                <option value="">Select location...</option>
-                                <option>Port Louis</option>
-                                <option>Grand Baie</option>
-                                <option>Airport</option>
-                            </select>
-                            </div>
-                        
-                            <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="pickupDateCar" class="form-label"><i class='bx bx-calendar'></i> Pickup Date</label>
-                                <input type="date" class="form-control" id="pickupDateCar" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="returnDateCar" class="form-label"><i class='bx bx-calendar'></i> Return Date</label>
-                                <input type="date" class="form-control" id="returnDateCar" required>
-                            </div>
-                            </div>
-                        
-                            <div class="text-center">
-                            <button type="submit" class="btn btn-primary rad-0">
-                                Rent a Car
-                            </button>
-                            </div>
-                        </form>
-                        
-                        <!-- SIGHTSEEING FORM -->
-                        <form id="sightseeingForm" class="booking-form d-none">
-                            <div class="mb-3">
-                            Explore our signature sightseeing tours with a friendly chauffeur.<br>
-                            Choose from preset itineraries or customize your own adventure!
-                            </div>
-                            <div class="text-center">
-                            <button type="submit" class="btn btn-primary w-100">
-                                 View Catalogue
-                            </button>
-                            </div>
-                        </form>
-                        
-                        <!-- ACTIVITIES FORM -->
-                        <form id="activitiesForm" class="booking-form d-none">
-                            <div class="mb-3">
-                            Carefully curated experiences for everyone — from parasailing at Île aux Cerfs to quad biking and more.<br>
-                            Discover the thrill of Mauritius with us!🏄‍♂️
-                            </div>
-                            <div class="text-center">
-                            <button type="submit" class="btn btn-primary w-100">
-                                 View Activities
-                            </button>
-                            </div>
-                        </form>
-        
-                    </div>
-                    <!--    end         ***** form  ****     -->
-
 
             
 
             </div>
         </div>
     </section>
-
+    <!-- 
     <section style="position:absolute; top: 50%; right: 0px; background-color: red;">
 
         </div>
-    </section>
+    </section> -->
 
     <!-- Services Section -->
-    <section id="services" class="section-padding" style="background: var(--gray-light);">
+    <section id="services" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="">Your Trusted Guide to Mauritius</h2>
-                    <!-- <p class="" style="color:rgb(75, 75, 75); font-size: 1.5rem;">Our Service</p> -->
-                  <!--   <hr class="custom-line"> -->
+                    <h2 class="section-heading">Your Trusted Guide to Mauritius</h2>
+                    <p class="subheading " style="color: var(--gray-dark);">Our Service</p>
                 </div>
             </div>
-            
+
             <!-- Swiper Container -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!-- Private Airport Transfer -->
+                    <!-- Repeated Swiper Slides -->
+                    <!-- Just showing 1 for example -->
                     <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-car'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=250&fit=crop" alt="Private Airport Transfer">
-                            </div>
-                            <div class="p-4">
+                        <div class="swiper-service-card" style="background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=250&fit=crop');">
+                            <div class="swiper-service-overlay">
                                 <h5>Private Airport Transfer</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$25</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
+                                <p class="description">Reliable and comfortable airport pickup & drop-off.</p>
+                                <button type="submit" class="btn btn-primary btn-lg button-text description" >
+                                    More
+                                </button>
+                                <p class="price-tag">$25 per person</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ... other slides repeated -->
+                    <div class="swiper-slide">
+                        <div class="swiper-service-card" style="background-image: url('img/service/private_airport_transfer.jpg');">
+                            <div class="swiper-service-overlay">
+                                <h5>Private Airport Transfer</h5>
+                                <p class="description">Reliable and comfortable airport pickup & drop-off.</p>
+                                <button type="submit" class="btn btn-primary btn-lg button-text description" >
+                                    More
+                                </button>
+                                <p class="price-tag">$25 per person</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-service-card" style="background-image: url('img/service/luxury_airport_transfer.jpg');">
+                            <div class="swiper-service-overlay">
+                                <h5>Private Airport Transfer</h5>
+                                <p class="description paragraph-text">Reliable and comfortable airport pickup & drop-off.</p>
+                                <button type="submit" class="btn btn-primary btn-lg button-text description" >
+                                    More
+                                </button>
+                                <p class="price-tag">$25 per person</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Private Sightseeing Tours -->
                     <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-map'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Sightseeing Tours">
-                            </div>
-                            <div class="p-4">
-                                <h5>Private Sightseeing Tours</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$45</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
+                        <div class="swiper-service-card" style="background-image: url('img/service/sightseeing_tour.jpg');">
+                            <div class="swiper-service-overlay">
+                                <h5>Private Airport Transfer</h5>
+                                <p class="description">Reliable and comfortable airport pickup & drop-off.</p>
+                                <button type="submit" class="btn btn-primary btn-lg button-text description" >
+                                    More
+                                </button>
+                                <p class="price-tag">$25 per person</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Activities & Tours -->
                     <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-swim'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop" alt="Activities & Tours">
-                            </div>
-                            <div class="p-4">
-                                <h5>Activities & Tours</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$35</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
+                        <div class="swiper-service-card" style="background-image: url('img/service/taxi_ride.jpg');">
+                            <div class="swiper-service-overlay">
+                                <h5>Private Airport Transfer</h5>
+                                <p class="description">Reliable and comfortable airport pickup & drop-off.</p>
+                                <button type="submit" class="btn btn-primary btn-lg button-text description" >
+                                    More
+                                </button>
+                                <p class="price-tag">$25 per person</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Car Rental -->
-                    <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-key'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=250&fit=crop" alt="Car Rental">
-                            </div>
-                            <div class="p-4">
-                                <h5>Car Rental</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$30</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Taxi Services -->
-                    <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-taxi'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="Taxi Services">
-                            </div>
-                            <div class="p-4">
-                                <h5>Taxi Services</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$20</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Luxury Airport Transfers -->
-                    <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-crown'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=400&h=250&fit=crop" alt="Luxury Airport Transfers">
-                            </div>
-                            <div class="p-4">
-                                <h5>Luxury Airport Transfers</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$75</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accommodations -->
-                    <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-hotel'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop" alt="Accommodations">
-                            </div>
-                            <div class="p-4">
-                                <h5>Accommodations</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$50</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Air Tickets -->
-                    <div class="swiper-slide">
-                        <div class="car-card">
-                            <div class="service-icon">
-                                <i class='bx bx-plane'></i>
-                            </div>
-                            <div class="car-image">
-                                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=250&fit=crop" alt="Air Tickets">
-                            </div>
-                            <div class="p-4">
-                                <h5>Air Tickets</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price-tag">$200</span>
-                                    <button class="btn square-yellow-btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                
+
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-                
+
                 <!-- Add Navigation buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next" style="display:none;"></div>
+                <div class="swiper-button-prev" style="display:none;"></div>
             </div>
 
-            <p class="section-subtitle text-center">
+            <p class=".paragraph-text  text-center" style="margin-top:50px;">
                 Mauritius is a vibrant mosaic of cultures, where people of Indian, African, Chinese, 
                 and European heritage live together in harmony, creating a unique blend of traditions,
                 festivals, and flavors. From the lively rhythms of Sega music to colorful celebrations 
@@ -454,27 +261,31 @@
                 Mauritius's diverse and thriving culture.
             </p>
 
-            <div class="row" style="margin-top: 4rem;">
-                <div class="col-lg-8 mx-auto text-center">
-                    <button class="btn btn-primary btn-lg rad-0">View All Services →</button>
-                </div>
+        </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 4rem;">
+            <div class="col-lg-8 mx-auto text-center">
+                <button class="btn btn-primary btn-lg rad-0">View All Services →</button>
             </div>
         </div>
+        </div>
     </section>
-
-    
-
-  
 
     <!-- Tours Section -->
     <section id="tours" class="section-padding" style="background: var(--gray-light);">
         <div class="container text-center my-5">
-            <h2>Explore your ideal journey by interest</h2>
+            <h2 class="section-heading ">Explore your ideal journey by interest</h2>
             <div class="d-flex flex-wrap justify-content-center my-3">
-                <button class="btn category-btn active">All Tours</button>
-                <button class="btn category-btn">Sea Activities</button>
-                <button class="btn category-btn">SightSeeing Tours</button>
-                <button class="btn category-btn">Nature Park</button>
+                <button class="btn button-text category-btn active">All Tours</button>
+                <button class="btn button-text category-btn">Sea Activities</button>
+                <button class="btn button-text category-btn">SightSeeing Tours</button>
+                <button class="btn button-text category-btn">Nature Park</button>
             </div>
         
             <div class="row g-4">
@@ -536,31 +347,25 @@
 
 
     <!-- Stats Section -->
-    <section class="stats-section section-padding" style="background-image: url('img/sand.png'); height: auto; background-size: cover; background-position: center;">
-        <div class="container">
+    <section class="stats-section section-padding" style=" height: auto; background-size: cover; background-position: center;">
+        <div class="container" >
             <div class="row text-center">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="stat-item">
                         <span class="stat-number">500+</span>
-                        <div class="stat-label">Happy Customers</div>
+                        <div class="stat-label">Reviews</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="stat-item">
-                        <span class="stat-number">50+</span>
+                        <span class="stat-number">10+</span>
                         <div class="stat-label">Vehicles Available</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="stat-item">
                         <span class="stat-number">15+</span>
                         <div class="stat-label">Tour Packages</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <div class="stat-label">Years Experience</div>
                     </div>
                 </div>
             </div>
@@ -572,12 +377,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="section-title">About VoyageHub</h2>
-                    <p class="section-subtitle">Your trusted partner for exploring Mauritius</p>
-                    <p>With years of experience in the Mauritius tourism industry, VoyageHub has established itself as a premier car rental and tour operator. We pride ourselves on providing exceptional service, reliable vehicles, and unforgettable experiences.</p>
-                    <p>Our team of local experts knows every corner of this beautiful island and is passionate about sharing its wonders with visitors from around the world.</p>
+                    <h2 class="section-title section-heading">About MyVac Tours Mauritius</h2>
+                    <p class="section-subtitle subheading  ">Your trusted partner for exploring Mauritius</p>
+                    <p class="paragraph-text">With years of experience in the Mauritius tourism industry, MyVac Tours has established itself as a premier car rental and tour operator. We pride ourselves on providing exceptional service, reliable vehicles, and unforgettable experiences.</p>
+                    <p class="paragraph-text">Our team of local experts knows every corner of this beautiful island and is passionate about sharing its wonders with visitors from around the world.</p>
                     
-                    <div class="row mt-4">
+                    <div class="row mt-4 paragraph-text" >
                         <div class="col-6">
                             <div class="d-flex align-items-center mb-3">
                                 <i class='bx bx-shield-check text-primary fs-3 me-3'></i>
@@ -655,26 +460,7 @@
     </section> -->
 
 
-        <!-- Car Section -->
-        <section class="py-5 " style="background: var(--primary-color);">
-            <div class="container">
-              <div class="row align-items-center">
-                
-                <!-- Left Side: Text Content -->
-                <div class="col-md-6 mb-4 mb-md-0" style="color:white;">
-                  <h2 class="fw-bold">Do you need a car?</h2>
-                  <p class="lead">Rent now and get <strong>10% discount</strong> on all our vehicles. Perfect for tours, business trips, and more!</p>
-                  <a href="#rent" class="btn btn-lg rounded-0" style="background-color: var(--dark-color); color:white;">Rent Car</a>
-                </div>
-          
-                <!-- Right Side: Image -->
-                <div class="col-md-6 text-center">
-                  <img  style="width:400px;" src="img/car/suzuki_spresso.jpg" alt="Car Rental" class="img-fluid rounded shadow">
-                </div>
-          
-              </div>
-            </div>
-          </section>
+
     
     <!-- Footer -->
     <footer class="footer">
@@ -685,7 +471,7 @@
                     <div class="col-lg-4 col-md-6">
                         
                         <a href="#" class="footer-logo">
-                            <img style="width:200px; height:200px;" src="img/logo1.png">
+                            <img style="width:200px; height:200px;" src="img/logo3.png">
                             <!-- <i class='bx bx-car'></i>
                             VoyageHub -->
                         </a>
@@ -800,7 +586,7 @@
             <div class="container">
                 <div class="footer-bottom-content">
                     <div class="copyright">
-                        <p>&copy; 2025 VoyageHub Mauritius. All rights reserved. | Designed with <i class='bx bx-heart' style="color: var(--accent-color);"></i> for travelers</p>
+                        <p>&copy; 2025 MyVac Tours Mauritius. All rights reserved. | Designed with <i class='bx bx-heart' style="color: var(--accent-color);"></i> for travelers</p>
                     </div>
                     <div class="footer-bottom-links">
                         <a href="#">Privacy Policy</a>
