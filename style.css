@@ -173,7 +173,7 @@ padding: 5rem 0;
 .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(192, 192, 192, 0.5);
     opacity: 1;
     transition: all 0.3s ease;
 }
@@ -182,6 +182,31 @@ padding: 5rem 0;
     background: var(--secondary-color);
     transform: scale(1.2);
 }
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .mySwiper{
+       padding-left: 15%;
+     }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .mySwiper{
+       display: flex;
+       justify-content: center;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .mySwiper{
+        padding-left: 5%;
+        
+
+    }
+  }
+  
 
 /* View All Button */
 .view-all-btn {
@@ -252,6 +277,9 @@ padding: 5rem 0;
 .btn-outline-primary:hover {
     background: var(--primary-color);
     transform: translateY(-2px);
+}
+.rad-0{
+    border-radius: 0px;
 }
 /*#endregion     Buttons */
 
@@ -326,6 +354,7 @@ padding: 5rem 0;
   .square-yellow-btn:hover {
     background-color: #e0a800;
   }
+
 /*#endregion Service Cards */
 
 /*#region Tour Cards */
@@ -443,121 +472,76 @@ padding: 5rem 0;
 .hero {
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    color: white;
+    overflow: hidden;
+    padding: 2rem;
 }
 
 .video-background {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
     z-index: -2;
-    background-color: white;
 }
 
 .video-background iframe {
     width: 100vw;
-    height: 56.25vw; /* 16:9 aspect ratio */
+    height: 56.25vw;
     min-height: 100vh;
-    min-width: 177.77vh; /* 16:9 aspect ratio */
+    min-width: 177.77vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(52, 152, 219, 0.432);
-    z-index: -1;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    color: white;
-    max-width: 800px;
-    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.hero h1 {
-    /* font-size: 3.5rem; */
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    animation: fadeInUp 1s ease-out;
-}
+.hero-title {
 
-.hero p {
-    /* font-size: 1.3rem; */
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    animation: fadeInUp 1s ease-out 0.3s both;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn-form {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid white; 
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: white;
+    color: #000;
+}
+
+.cta-wrapper {
+    margin-top: 2rem;
+}
+
 
 /*#endregion Hero Section with Video Background */
 
-/*#region Form(rent car,taxi,...)*/
-    .booking-form {
-      background-color: #bdd2dd;
-      padding: 30px;
-      border: 1px solid #ddd;
-      max-width: 600px;
-      margin: 0px auto;
-      border-radius: 0;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    }
-
-    /* .form-control,
-    .form-select,
-    .btn {
-      border-radius: 0 !important;
-    } */
-    .rad-0{
-        border-radius: 0 !important;
-    }
-
-    /* Apply to all outline-primary buttons */
-    .btn-form{    
-        background-color: rgb(1, 63, 77);
-        color: #fff;
-        border: none;
-
-    }
-    .btn-form:hover,.btn-form:focus{
-        background-color: rgb(2, 85, 100);
-        color: #fff;
-        border: none;
-    }
-    .btn-form.active{
-        background-color: var(--primary-color);
-        color: #fff;
-        border: none;
-
-    }
- 
-
-
-    .form-label i {
-      margin-right: 5px;
-    }
-
-    .toggle-buttons {
-      margin-top: 20px;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-/*#endregion Form(rent car,taxi,...)*/
 
 
 /*#endregion    ---------Hero Section         ----------*/
@@ -584,19 +568,111 @@ padding: 5rem 0;
   .destination-card:hover {
     transform: scale(1.02);
   }
+  .card-title{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+  }
+  .card-time{
+    font-size: 14px;
+    font-weight: 600; /* Semi-bold */
+    font-family: 'Poppins', sans-serif;
+  }
   .card-body p {
     margin: 0;
   }
 
   .tour-price {
+    font-size: 18px;
     font-weight: 700;
-    color: var(--primary-color);
   }
  
   .tour-rating {
-    color: var(--accent-color);
+    color: yellow;
     margin-bottom: 1rem;
   }
+
+
+  .category-btn {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.category-btn.active {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.destination-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.destination-card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tour-rating {
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.rating-text {
+  color: #333;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.from-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.tour-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00AEEF;
+}
+
+.per-person {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  margin-left: 4px;
+}
+
   /*#endregion    ---------Tour sectionn        ----------*/
 
 
@@ -910,8 +986,8 @@ padding: 5rem 0;
     display: flex;
    }
 
-   .swiper-slide{
+   /* .swiper-slide{
     left:50px;
-   }
+   } */
 
 }
