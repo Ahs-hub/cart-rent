@@ -60,7 +60,7 @@
                 <span>+230 55040167</span>
             </div>
             <!-- Toggler Button -->
-            <button class="navbar-toggler no-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler no-border" style="color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class='bx bx-menu icon-toggler'></i>
             </button>
 
@@ -91,6 +91,9 @@
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#event_planner">Event Planner</a>
                     </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Language</a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -98,7 +101,7 @@
                         <a class="nav-link" href="#contact">Profile</a>
                     </li>
                     <!-- <li class="nav-item" style="display: flex;  align-items: center;">
-                       <button class="btn btn-outline-primary">Login</button>
+                       <button class="btn btn-outline-primary">Profile</button>
                     </li> -->
                 </ul>
             </div>
@@ -113,48 +116,31 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="video-background">
-            <!-- <iframe src="https://www.youtube.com/embed/nx7j0ZAUvjY?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=nx7j0ZAUvjY"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
-            </iframe> -->
-
-            <iframe src="https://www.youtube.com/embed/SiGbWtxeZIA?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=SiGbWtxeZIA"
+          <iframe src="https://www.youtube.com/embed/SiGbWtxeZIA?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=SiGbWtxeZIA"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen>
-        </iframe>
-        
+          </iframe>
         </div>
-        <!-- <div class="hero-overlay"></div> -->
-
-        <div class="container content">
-            <div class="row align-items-center">
-                <div style="color:white">  
-                     <!-- <p class="lead caption-label">#IslandVibesUnleashed</p> -->
-                    <h1 class="hero-title">Let mauritius Vacation be your next escape</h1>
-                </div>
-                     
-                </div>
-                <!-- <div class="col-lg-6">
-                    <div class="text-center">
-                        
-                        <div class="img-placeholder" style="height: 400px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                            <div>
-                                <i class='bx bx-car' style="font-size: 6rem; color: white; opacity: 0.8;"></i>
-                                <p style="color: white; margin-top: 20px;">Add your Mauritius landscape or car image here</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
-
-
-            
-
-            </div>
+      
+        <div class="container content hero-content">
+          <h1 class="hero-title">Let Mauritius Vacation Be Your Next Escape</h1>
+      
+          <div class="button-group">
+            <button class="btn btn-form"><i class='bx bx-map'></i> Explore Mauritius</button>
+            <button class="btn btn-form"><i class='bx bx-camera'></i> Sightseeing</button>
+            <button class="btn btn-form"><i class='bx bx-run'></i> Activities</button>
+            <button class="btn btn-form"><i class='bx bx-car'></i> Car Rental</button>
+          </div>
+      
+          <div class="cta-wrapper">
+            <button class="btn btn-primary btn-lg cta-button">
+             Customize Tours
+            </button>
+          </div>
         </div>
-    </section>
+      </section>
+      
     <!-- 
     <section style="position:absolute; top: 50%; right: 0px; background-color: red;">
 
@@ -172,7 +158,7 @@
             </div>
 
             <!-- Swiper Container -->
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper" >
                 <div class="swiper-wrapper">
                     <!-- Repeated Swiper Slides -->
                     <!-- Just showing 1 for example -->
@@ -269,7 +255,7 @@
 
 
 
-        <div class="row" style="margin-top: 4rem;">
+        <div  style="margin-top: 4rem;">
             <div class="col-lg-8 mx-auto text-center">
                 <button class="btn btn-primary btn-lg rad-0">View All Services →</button>
             </div>
@@ -291,47 +277,164 @@
             <div class="row g-4">
                 <!-- Destination Card -->
                 <div class="col-md-3">
-                <div class="card destination-card">
-                    <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Destination">
-                    <div class="card-body text-start">
-                    <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
-                    <p class="tour-rating"><i class="bx bxs-star"></i>4.8</p>
-                    <p><strong class="tour-price">$42</strong> / Nights</p>
-                    </div>
-                </div>
+                    <div class="card destination-card">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                          <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                          <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                          </div>
+                          <p class="from-text">From</p>
+                          <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
+                        </div>
+                      </div>
                 </div>
                 <!-- Duplicate this card 3 more times -->
                 <div class="col-md-3">
                     <div class="card destination-card">
-                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Destination">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
                         <div class="card-body text-start">
-                        <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
-                        <p class="tour-rating"><i class="bx bxs-star"></i>4.8</p>
-                        <p><strong class="tour-price">$42</strong> / Nights</p>
+                          <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                          <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                          <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                          </div>
+                          <p class="from-text">From</p>
+                          <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
                         </div>
-                    </div>
+                      </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="card destination-card">
-                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Destination">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
                         <div class="card-body text-start">
-                        <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
-                        <p class="tour-rating"><i class="bx bxs-star"></i>4.8</p>
-                        <p><strong class="tour-price">$42</strong> / Nights</p>
+                          <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                          <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                          <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                          </div>
+                          <p class="from-text">From</p>
+                          <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
                         </div>
-                    </div>
+                      </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="card destination-card">
-                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Destination">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
                         <div class="card-body text-start">
-                        <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
-                        <p class="tour-rating"><i class="bx bxs-star"></i>4.8</p>
-                        <p><strong class="tour-price">$42</strong> / Nights</p>
+                          <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                          <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                          <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                          </div>
+                          <p class="from-text">From</p>
+                          <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
                         </div>
-                    </div>
+                      </div>
+                </div>
+
+                <!-- Destination Card -->
+                <div class="col-md-3">
+                    <div class="card destination-card">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                            <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                            <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                            </div>
+                            <p class="from-text">From</p>
+                            <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card destination-card">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                            <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                            <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                            </div>
+                            <p class="from-text">From</p>
+                            <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card destination-card">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                            <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                            <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                            </div>
+                            <p class="from-text">From</p>
+                            <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card destination-card">
+                        <img src="img/tour/catamaran_1.jpg" class="card-img-top" alt="Catamaran Cruise to Ile Aux Gabriel Island">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Catamaran Cruise to Ile Aux Gabriel Island</h5>
+                            <p class="card-time">7 hours &nbsp;•&nbsp; Pickup Included</p>
+                            <div class="tour-rating mb-2">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                            <span class="rating-text">4.7 (932)</span>
+                            </div>
+                            <p class="from-text">From</p>
+                            <p><strong class="tour-price">$42</strong> <span class="per-person">per person</span></p>
+                        </div>
+                        </div>
                 </div>
               
             </div>
