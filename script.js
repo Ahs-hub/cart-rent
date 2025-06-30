@@ -20,44 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //#endregion Hamburger Icon Toggle
 
-//#region Form Toggle (Taxi, Rent Car, Sightseeing, Activities)
-document.addEventListener('DOMContentLoaded', function () {
-  const forms = {
-    taxiBtn: "taxiForm",
-    rentCarBtn: "rentCarForm",
-    sightseeingBtn: "sightseeingForm",
-    activitiesBtn: "activitiesForm"
-  };
 
-  Object.keys(forms).forEach(btnId => {
-    const btn = document.getElementById(btnId);
-    const formId = forms[btnId];
-
-    if (btn && document.getElementById(formId)) {
-      btn.addEventListener("click", function () {
-        // Reset all buttons and forms
-        Object.keys(forms).forEach(b => {
-          document.getElementById(b).classList.remove("active");
-          document.getElementById(forms[b]).classList.add("d-none");
-        });
-
-        // Activate selected
-        this.classList.add("active");
-        document.getElementById(formId).classList.remove("d-none");
-      });
-    }
-  });
-
-  const sameLocationCheck = document.getElementById('sameLocationCheck');
-  const returnLocationGroup = document.getElementById('returnLocationGroup');
-
-  if (sameLocationCheck && returnLocationGroup) {
-    sameLocationCheck.addEventListener('change', function () {
-      returnLocationGroup.style.display = this.checked ? 'none' : 'block';
-    });
-  }
-});
-//#endregion Form Toggle
 
 //#region Carousel (Empty Region - add your logic here)
         // Initialize Swiper
