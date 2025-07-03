@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Tour & Car Rental</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Google Font comic -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts poppins,lato,Open_sans,Roboto-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="servicepage.css">
+</head>
+<body>
+    <!-- Header Info -->
+    <div class="header navbars-links">
+        <div class="header-info">
+            <div class="header-left">
+                <div class="header-item">
+                        <i class='bx bx-map'></i>
+                        <span>Tour Operator in Mauritius</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+230 55040167</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-time'></i>
+                    <span>24/7</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-item">
+                        <i class='bx bx-book'></i>
+                        <span>Tour Catalog 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <!-- <i class='bx bx-car'></i> -->
+                        <img src="img/logo3.png">
+            </a>
+            <div class="header-item phone-appear" style="color:white;">
+                <i class='bx bx-phone'></i>
+                <span>+230 55040167</span>
+            </div>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler no-border" style="color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class='bx bx-menu icon-toggler'></i>
+            </button>
+
+            <div class="collapse navbar-collapse navbars-links" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fleetpage.html">Our Fleet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>     
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Wishlist</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#event_planner">EN/EUR</a>
+                    </li> -->         
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#langCurrencyModal">
+                            <i class='bx bx-globe'></i> EN/EUR(€)
+                        </a>
+                        </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#event_planner">Event Planner</a>
+                    </li> --> 
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Language</a>
+                    </li> -->
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
+                            <i class='bx bx-user'></i> Profile
+                        </a>
+                        </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Profile</a>
+                    </li> -->
+                    <!-- <li class="nav-item" style="display: flex;  align-items: center;">
+                        <button class="btn btn-outline-primary">Profile</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 class="hero-title mb-4">Our Services</h1>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent border-0">
+                                <i class="bx bx-search"></i>
+                            </span>
+                            <input type="text" class="form-control border-0" placeholder="Search services..." id="searchInput">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-buttons text-center" style="margin-top:25px;">
+            <button class="filter-btn active " data-filter="all" >All Services</button>
+            <button class="filter-btn" data-filter="transport" >Transport</button>
+            <button class="filter-btn" data-filter="tours" >Tours</button>
+            <button class="filter-btn" data-filter="travel" >Travel</button>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="servicesContainer">
+                <!-- Private Airport Transfer -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="transport">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Private Airport Transfer" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-car text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.9/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Private Airport Transfer</h3>
+                            <p class="service-description">Comfortable and reliable door-to-door airport transfers with professional drivers and luxury vehicles.</p>
+                            <a href="#" class="service-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private Sightseeing Tour -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="tours">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Private Sightseeing Tour" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-map text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.8/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Private Sightseeing Tour</h3>
+                            <p class="service-description">Explore breathtaking destinations with our expert guides and customized itineraries for unforgettable experiences.</p>
+                            <a href="#" class="service-btn">Explore Tours</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activities & Tour -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="tours">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Activities & Tour" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-run text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.7/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Activities & Tour</h3>
+                            <p class="service-description">Thrilling adventures and cultural experiences including water sports, hiking, and local attractions.</p>
+                            <a href="#" class="service-btn">View Activities</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Rental -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="transport">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Car Rental" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-key text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.9/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Car Rental</h3>
+                            <p class="service-description">Premium fleet of vehicles available for self-drive adventures with flexible rental options and competitive rates.</p>
+                            <a href="#" class="service-btn">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taxi Services -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="transport">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="img/car/taxi_ride.jpg" alt="Taxi Services" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-taxi text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.6/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Taxi Services</h3>
+                            <p class="service-description">24/7 taxi services with experienced drivers for convenient city transportation and local travel needs.</p>
+                            <a href="#" class="service-btn">Book Taxi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Airport Transfers -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="transport">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Airport Transfers" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-diamond text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 5.0/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Luxury Airport Transfers</h3>
+                            <p class="service-description">Premium luxury vehicles with VIP treatment, perfect for business travelers and special occasions.</p>
+                            <a href="#" class="service-btn">Book Luxury</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accommodations -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="travel">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Accommodations" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-bed text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.8/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Accommodations</h3>
+                            <p class="service-description">Handpicked hotels, resorts, and vacation rentals offering comfort and luxury for every budget and preference.</p>
+                            <a href="#" class="service-btn">Find Hotels</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Air Ticket -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="travel">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Air Ticket" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-plane text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 4.7/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Air Ticket</h3>
+                            <p class="service-description">Competitive flight booking services with access to major airlines and exclusive deals for domestic and international travel.</p>
+                            <a href="#" class="service-btn">Book Flights</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marriage Planner -->
+                <div class="col-lg-4 col-md-6 service-card" data-category="tours">
+                    <div class="service-item">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Marriage Planner" class="service-image">
+                            <div class="service-overlay">
+                                <i class="bx bx-heart text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="stats-overlay">
+                                <i class="bx bx-star"></i> 5.0/5
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Marriage Planner</h3>
+                            <p class="service-description">Complete wedding planning services including destination weddings, venue selection, and honeymoon packages.</p>
+                            <a href="#" class="service-btn">Plan Wedding</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="section-divider"></div>
+    </div>
+
+    <!-- Marriage Planning Special Section -->
+    <section class="marriage-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Wedding Planning" class="marriage-image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="marriage-content">
+                        <h2 class="section-heading mb-4" style="font-weight: 700; color:var(--primary-color);">We Offer Marriage Planning</h2>
+                        <p class="paragraph-text mb-4" style=" color: grey;">Make your special day unforgettable with our comprehensive marriage planning services. From intimate beach ceremonies to grand destination weddings, we handle every detail with precision and care.</p>
+                        <div class="row mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bx bx-check-circle text-success me-3" style="font-size: 1.5rem;"></i>
+                                    <span style="color:grey">Venue Selection</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bx bx-check-circle text-success me-3" style="font-size: 1.5rem;"></i>
+                                    <span style="color:grey">Decoration & Catering</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bx bx-check-circle text-success me-3" style="font-size: 1.5rem;"></i>
+                                    <span style="color:grey">Photography & Video</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bx bx-check-circle text-success me-3" style="font-size: 1.5rem;"></i>
+                                    <span style="color:grey;">Honeymoon Packages</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="service-btn" style="padding: 15px 40px; font-size: 1.1rem;">Start Planning Your Dream Wedding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        
+                        <a href="#" class="footer-logo">
+                            <img style="width:200px; height:200px;" src="img/logo3.png">
+                            <!-- <i class='bx bx-car'></i>
+                            VoyageHub -->
+                        </a>
+                        <!-- <p class="mb-4" style="color: var(--light-color); line-height: 1.6;">
+                            Your trusted partner for exploring the beautiful island of Mauritius. We provide premium car rentals, professional drivers, and unforgettable tours to make your vacation extraordinary.
+                        </p> -->
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="#" class="social-link" title="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="#" class="social-link" title="WhatsApp">
+                                <i class='bx bxl-whatsapp'></i>
+                            </a>
+                            <a href="#" class="social-link" title="TripAdvisor">
+                                <i class='bx bx-map'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5>Quick Links</h5>
+                            <ul class="footer-links">
+                                <li><a href="#home"><i class='bx bx-chevron-right'></i>Home</a></li>
+                                <li><a href="#about"><i class='bx bx-chevron-right'></i>About Us</a></li>
+                                <li><a href="#services"><i class='bx bx-chevron-right'></i>Services</a></li>
+                                <li><a href="#cars"><i class='bx bx-chevron-right'></i>Our Fleet</a></li>
+                                <li><a href="#tours"><i class='bx bx-chevron-right'></i>Tours</a></li>
+                                <li><a href="#contact"><i class='bx bx-chevron-right'></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5>Services</h5>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class='bx bx-car'></i>Car Rental</a></li>
+                                <li><a href="#"><i class='bx bx-user'></i>Driver Services</a></li>
+                                <li><a href="#"><i class='bx bx-map'></i>Island Tours</a></li>
+                                <li><a href="#"><i class='bx bx-shield'></i>Airport Transfer</a></li>
+                                <li><a href="#"><i class='bx bx-calendar'></i>Custom Packages</a></li>
+                                <li><a href="#"><i class='bx bx-support'></i>24/7 Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-section">
+                            <h5>Contact Info</h5>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-phone'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Phone</strong>
+                                        <span>+230 55040167</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-envelope'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Email</strong>
+                                        <span>info@voyagehub.mu</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-map'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Location</strong>
+                                        <span>Mauritius Island</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Newsletter -->
+                            <!-- <div class="newsletter-form">
+                                <h6><i class='bx bx-envelope'></i> Stay Updated</h6>
+                                <p>Get the latest deals and travel tips delivered to your inbox.</p>
+                                <div class="newsletter-input">
+                                    <input type="email" placeholder="Enter your email" required>
+                                    <button type="submit" class="newsletter-btn">
+                                        <i class='bx bx-send'></i>
+                                    </button>
+                                </div>
+                                <small style="color: var(--light-color); opacity: 0.8;">
+                                    We respect your privacy. Unsubscribe anytime.
+                                </small>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 MyVac Tours Mauritius. All rights reserved. | Designed with <i class='bx bx-heart' style="color: var(--accent-color);"></i> for travelers</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Booking Terms</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Profile Modal -->
+    <div class="modal fade " id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content custom-modal ">
+            <div class="modal-body">
+                <h5 class="modal-title mb-4" id="profileModalLabel">Profile</h5>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item profile-item">
+                    <i class='bx bx-log-in-circle'></i> Log In or Sign In
+                </li>
+                <li class="list-group-item profile-item">
+                    <i class='bx bx-support'></i> Support
+                </li>
+                <li class="list-group-item profile-item">
+                    <i class='bx bx-mobile'></i> Download our App
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language & Currency Modal -->
+    <div class="modal fade" id="langCurrencyModal" tabindex="-1" aria-labelledby="langCurrencyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content lang-modal">
+    
+            <!-- Modal Header with Tabs -->
+            <div class="modal-header border-0">
+            <ul class="nav nav-tabs nav-fill w-100" id="langCurrencyTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="language-tab" data-bs-toggle="tab" data-bs-target="#language" type="button" role="tab">
+                    <i class='bx bx-globe'></i> Language
+                </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="currency-tab" data-bs-toggle="tab" data-bs-target="#currency" type="button" role="tab">
+                    <i class='bx bx-dollar-circle'></i> Currency
+                </button>
+                </li>
+            </ul>
+            <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <!-- Modal Body with Tab Content -->
+            <div class="modal-body tab-content">
+            <!-- Language Tab -->
+            <div class="tab-pane fade show active" id="language" role="tabpanel">
+                <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled lang-list">
+                    <li class="active">English (United States) <i class='bx bx-check'></i></li>
+                    <li>Bahasa Melayu</li>
+                    <li>Čeština</li>
+                    <li>Deutsch (Deutschland)</li>
+                    <li>Deutsch (Schweiz)</li>
+                    <li>English (Australia)</li>
+                    <li>Español (España)</li>
+                    <li>Français</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled lang-list">
+                    <li>Bahasa Indonesia</li>
+                    <li>Català</li>
+                    <li>Dansk</li>
+                    <li>Deutsch (Österreich)</li>
+                    <li>Eesti</li>
+                    <li>English (United Kingdom)</li>
+                    <li>Español (México)</li>
+                    <li>Hrvatski</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    
+            <!-- Currency Tab -->
+            <div class="tab-pane fade" id="currency" role="tabpanel">
+                <div class="row gx-5">
+                <!-- Common Currencies -->
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>Australian Dollar <span>A$</span></li>
+                    <li class="active">Euro <span>€</span> <i class='bx bx-check'></i></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>British Pound <span>£</span></li>
+                    <li>Swiss Franc <span>CHF</span></li>
+                    <li>Canadian Dollar <span>C$</span></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>U.S. Dollar <span>$</span></li>
+                    </ul>
+                </div>
+                </div>
+            
+                <!-- All Currencies Divider -->
+                <div class="mt-4 mb-2">
+                <hr>
+                <p class="text-uppercase fw-bold small text-center all-currencies-label">All Currencies</p>
+                <hr>
+                </div>
+            
+                <!-- Uncommon Currencies -->
+                <div class="row gx-5">
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>Egyptian Pound <span>E£</span></li>
+                    <li>Hungarian Forint <span>Ft</span></li>
+                    <li>Indian Rupee <span>₹</span></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>Chilean Peso <span>CL$</span></li>
+                    <li>Czech Koruna <span>Kč</span></li>
+                    <li>Bulgarian Lev <span>лв</span></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-4">
+                    <ul class="list-unstyled currency-list">
+                    <li>Chinese Yuan <span>RMB¥</span></li>
+                    <li>Danish Krone <span>DKK</span></li>
+                    <li>Hong Kong Dollar <span>HK$</span></li>
+                    <li>Indonesian Rupiah <span>Rp</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    
+
+            </div>
+    
+        </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            serviceCards.forEach(card => {
+                const title = card.querySelector('.service-title').textContent.toLowerCase();
+                const description = card.querySelector('.service-description').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const serviceCards = document.querySelectorAll('.service-card');
+                
+                serviceCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for service buttons
+        document.querySelectorAll('.service-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Add your booking/navigation logic here
+                console.log('Service button clicked:', this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
