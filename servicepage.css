@@ -250,4 +250,24 @@ body {
         margin: 5px;
         padding: 10px 20px;
     }
+    .hero {
+        padding-top: 100px;
+     }
+     .hero h1 {
+         font-size: 2.5rem;
+     }
+     
+     .hero p {
+         font-size: 1.1rem;
+     }
+     
+     .section-title {
+         font-size: 2rem;
+     }
+     .navbar{
+         position: fixed;
+     }
+    .phone-appear{
+     display: flex;
+    }
 }
