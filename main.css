@@ -78,7 +78,7 @@ body {
 /*#region Header              */
 .header {
     /* background: var(--dark-color); */
-    background: rgb(1, 63, 77);
+    background: #05123E;
      color:white;
     /* color: var(--dark-color) !important; */
     padding: 0.5rem 0;
@@ -112,7 +112,9 @@ body {
     /* padding: 1rem 0; */
     position: sticky;
 
-    background: rgba(0, 108, 133, 0.8);
+    /* background: #05123E; */
+    background: #0a216d;
+    
     
     /* background: rgba(255, 255, 255, 0.95) !important; */
     backdrop-filter: blur(10px);
