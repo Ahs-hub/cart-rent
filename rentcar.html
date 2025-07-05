@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Swift - Car Rental Details | Quickai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rentcar.css">
+</head>
+<body>
+
+    <!-- Header Info -->
+    <div class="header navbars-links">
+        <div class="header-info">
+            <div class="header-left">
+                <div class="header-item">
+                        <i class='bx bx-map'></i>
+                        <span>Tour Operator in Mauritius</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+230 55040167</span>
+                </div>
+                <div class="header-item">
+                    <i class='bx bx-time'></i>
+                    <span>24/7</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-item">
+                        <i class='bx bx-book'></i>
+                        <span>Tour Catalog 2025</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <!-- <i class='bx bx-car'></i> -->
+                        <img src="img/logo3.png">
+            </a>
+            <div class="header-item phone-appear" style="color:white;">
+                <i class='bx bx-phone'></i>
+                <span>+230 55040167</span>
+            </div>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler no-border" style="color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class='bx bx-menu icon-toggler'></i>
+            </button>
+
+            <div class="collapse navbar-collapse navbars-links" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicepage.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fleetpage.html">Our Fleet</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tourpage.html">Tours</a>
+                    </li>     
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="whislist.html">Wishlist</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#event_planner">EN/EUR</a>
+                    </li> -->         
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#langCurrencyModal">
+                            <i class='bx bx-globe'></i> EN/EUR(€)
+                        </a>
+                        </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#event_planner">Event Planner</a>
+                    </li> --> 
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Language</a>
+                    </li> -->
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
+                            <i class='bx bx-user'></i> Profile
+                        </a>
+                        </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Profile</a>
+                    </li> -->
+                    <!-- <li class="nav-item" style="display: flex;  align-items: center;">
+                        <button class="btn btn-outline-primary">Profile</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Car Details Card -->
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <div class="car-image">
+                            <img src="img/car/suzuki_swift.jpg">
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h2 class="car-title">Suzuki Swift</h2>
+                        <span class="car-category">Economy</span>
+                        
+                        <div class="car-features">
+                            <div class="feature-item">
+                                <i class='bx bx-user'></i>
+                                <span>7</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-briefcase'></i>
+                                <span>3</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-cog'></i>
+                                <span>Manual</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-droplet'></i>
+                                <span>Gasoline</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class='bx bx-shield-check'></i>
+                                <span>A/C</span>
+                            </div>
+                        </div>
+
+                        <div class="included-section">
+                            <h6 class="included-title">Included in the price:</h6>
+                            <div class="included-features">
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Free Cancellation</span>
+                                </div>
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Free Guarantee</span>
+                                </div>
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Free Modification</span>
+                                </div>
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Instantly Confirmed</span>
+                                </div>
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Third Party Liability</span>
+                                </div>
+                                <div class="included-item">
+                                    <i class='bx bx-check'></i>
+                                    <span>Damage Waiver</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-badge">
+                            <i class='bx bx-star'></i>
+                            <span>Excellent (185 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Confirmation Alert -->
+                <div class="confirmation-alert">
+                    <i class='bx bx-info-circle'></i>
+                    <span><strong>Instant Confirmation:</strong> This vehicle is available now. You will get your confirmation immediately.</span>
+                </div>
+
+                <!-- Driver Details Form -->
+                <div class="step-indicator">
+                    <div class="step-item">
+                        <div class="step-number active" id="step1-indicator">1</div>
+                        <div class="step-title">Select Dates</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number" id="step2-indicator">2</div>
+                        <div class="step-title">Check Availability</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number" id="step3-indicator">3</div>
+                        <div class="step-title">Add-ons</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number" id="step4-indicator">4</div>
+                        <div class="step-title">Driver Details</div>
+                    </div>
+                </div>
+                <div class="form-section" style="background-color:#dfe1eb;">
+                    <h5>Driver Details</h5>
+                    <form id="driverForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Driver Age</label>
+                                    <select class="form-control" required>
+                                        <option value="">30 - 65</option>
+                                        <option value="21-25">21 - 25</option>
+                                        <option value="26-30">26 - 30</option>
+                                        <option value="31-35">31 - 35</option>
+                                        <option value="36-40">36 - 40</option>
+                                        <option value="41-45">41 - 45</option>
+                                        <option value="46-50">46 - 50</option>
+                                        <option value="51-55">51 - 55</option>
+                                        <option value="56-60">56 - 60</option>
+                                        <option value="61-65">61 - 65</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control" placeholder="Enter Mobile Number" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter Email Id" required>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caption-label text-muted">
+                            Service voucher will be sent to this email
+                        </p>
+                        <p class="caption-label text-muted">
+                            Providing us with your flight number helps to ensure your vehicle is available if your flight is delayed
+                        </p>
+                       
+                            <button class="btn btn-primary" style="max-width:320px;">Sent Quote</button>
+
+         
+                        
+                        
+                           
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label terms-text" for="terms">
+                                    I understand & agree with the <a href="#" class="terms-link">Terms & Conditions</a>
+                                </label>
+                            </div>
+                            <p class="terms-text">
+                                <!-- <i class='bx bx-time'></i> Last Booked: 4 hours ago -->
+                            </p>
+       
+                    </form>
+                </div>
+
+                <!-- Collision Information -->
+                <div class="blocked-info">
+                    <h6><i class='bx bx-shield-alt-2'></i> Collision & Insurance Information</h6>
+                    <p class="mb-2">Our vehicles are covered with comprehensive insurance. In case of collision:</p>
+                    <ul class="mb-2">
+                        <li>Standard deductible: €500</li>
+                        <li>Full coverage insurance reduces deductible to €0</li>
+                        <li>All accidents must be reported immediately</li>
+                        <li>24/7 support line available</li>
+                    </ul>
+                    <p class="mb-0">Damage assessment conducted by certified inspectors.</p>
+                </div>
+            </div>
+
+            <!-- Price Sidebar -->
+            <div class="col-lg-4">
+                <div class="booking-sidebar">
+                    <div class="booking-header">
+                        <h6>Pick-up</h6>
+                        <div class="datetime-info">
+                            <strong>...</strong>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="booking-section">
+                        <h6>Drop-off</h6>
+                        <div class="datetime-info">
+                            <strong>...</strong>
+                        </div>
+                    </div>
+
+                    <div class="booking-section">
+                        <h6>Price Summary</h6>
+                        <div class="price-row">
+                            <span>Car rental fee/days</span>
+                            <span>$26</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Taxes include airport (pick-up) service, Customer Service, Tourism tax</span>
+                            <span></span>
+                        </div>
+                        <div class="price-row discount-row">
+                            <span>Discount (20% Off)</span>
+                            <span>-$40</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>Total Amount</span>
+                            <span>$210</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        
+                        <a href="#" class="footer-logo">
+                            <img style="width:200px; height:200px;" src="img/logo3.png">
+                            <!-- <i class='bx bx-car'></i>
+                            VoyageHub -->
+                        </a>
+                        <!-- <p class="mb-4" style="color: var(--light-color); line-height: 1.6;">
+                            Your trusted partner for exploring the beautiful island of Mauritius. We provide premium car rentals, professional drivers, and unforgettable tours to make your vacation extraordinary.
+                        </p> -->
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="#" class="social-link" title="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="#" class="social-link" title="WhatsApp">
+                                <i class='bx bxl-whatsapp'></i>
+                            </a>
+                            <a href="#" class="social-link" title="TripAdvisor">
+                                <i class='bx bx-map'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5>Quick Links</h5>
+                            <ul class="footer-links">
+                                <li><a href="#home"><i class='bx bx-chevron-right'></i>Home</a></li>
+                                <li><a href="#about"><i class='bx bx-chevron-right'></i>About Us</a></li>
+                                <li><a href="#services"><i class='bx bx-chevron-right'></i>Services</a></li>
+                                <li><a href="#cars"><i class='bx bx-chevron-right'></i>Our Fleet</a></li>
+                                <li><a href="#tours"><i class='bx bx-chevron-right'></i>Tours</a></li>
+                                <li><a href="#contact"><i class='bx bx-chevron-right'></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5>Services</h5>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class='bx bx-car'></i>Car Rental</a></li>
+                                <li><a href="#"><i class='bx bx-user'></i>Driver Services</a></li>
+                                <li><a href="#"><i class='bx bx-map'></i>Island Tours</a></li>
+                                <li><a href="#"><i class='bx bx-shield'></i>Airport Transfer</a></li>
+                                <li><a href="#"><i class='bx bx-calendar'></i>Custom Packages</a></li>
+                                <li><a href="#"><i class='bx bx-support'></i>24/7 Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-section">
+                            <h5>Contact Info</h5>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-phone'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Phone</strong>
+                                        <span>+230 55040167</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-envelope'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Email</strong>
+                                        <span>info@voyagehub.mu</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='bx bx-map'></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <strong>Location</strong>
+                                        <span>Mauritius Island</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Newsletter -->
+                            <!-- <div class="newsletter-form">
+                                <h6><i class='bx bx-envelope'></i> Stay Updated</h6>
+                                <p>Get the latest deals and travel tips delivered to your inbox.</p>
+                                <div class="newsletter-input">
+                                    <input type="email" placeholder="Enter your email" required>
+                                    <button type="submit" class="newsletter-btn">
+                                        <i class='bx bx-send'></i>
+                                    </button>
+                                </div>
+                                <small style="color: var(--light-color); opacity: 0.8;">
+                                    We respect your privacy. Unsubscribe anytime.
+                                </small>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 MyVac Tours Mauritius. All rights reserved. | Designed with <i class='bx bx-heart' style="color: var(--accent-color);"></i> for travelers</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Booking Terms</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+        <!-- Profile Modal -->
+        <div class="modal fade " id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+              <div class="modal-content custom-modal ">
+                <div class="modal-body">
+                  <h5 class="modal-title mb-4" id="profileModalLabel">Profile</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item profile-item">
+                      <i class='bx bx-log-in-circle'></i> Log In or Sign In
+                    </li>
+                    <li class="list-group-item profile-item">
+                      <i class='bx bx-support'></i> Support
+                    </li>
+                    <li class="list-group-item profile-item">
+                      <i class='bx bx-mobile'></i> Download our App
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+           <!-- Language & Currency Modal -->
+            <div class="modal fade" id="langCurrencyModal" tabindex="-1" aria-labelledby="langCurrencyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content lang-modal">
+            
+                    <!-- Modal Header with Tabs -->
+                    <div class="modal-header border-0">
+                    <ul class="nav nav-tabs nav-fill w-100" id="langCurrencyTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="language-tab" data-bs-toggle="tab" data-bs-target="#language" type="button" role="tab">
+                            <i class='bx bx-globe'></i> Language
+                        </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="currency-tab" data-bs-toggle="tab" data-bs-target="#currency" type="button" role="tab">
+                            <i class='bx bx-dollar-circle'></i> Currency
+                        </button>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+            
+                    <!-- Modal Body with Tab Content -->
+                    <div class="modal-body tab-content">
+                    <!-- Language Tab -->
+                    <div class="tab-pane fade show active" id="language" role="tabpanel">
+                        <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled lang-list">
+                            <li class="active">English (United States) <i class='bx bx-check'></i></li>
+                            <li>Russie</li>
+                            <li>English (Australia)</li>
+                            <li>Español (España)</li>
+                            <li>Français</li>
+                            <li>Chinese</li>
+                            <li>Germany</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <ul class="list-unstyled lang-list">
+                            <li>Bahasa Indonesia</li>
+                            <li>Català</li>
+                            <li>Dansk</li>
+                            <li>Deutsch (Österreich)</li>
+                            <li>Eesti</li>
+                            <li>English (United Kingdom)</li>
+                            <li>Español (México)</li>
+                            <li>Hrvatski</li>
+                            </ul>
+                        </div> -->
+                        </div>
+                    </div>
+            
+                    <!-- Currency Tab -->
+                    <div class="tab-pane fade" id="currency" role="tabpanel">
+                        <div class="row gx-5">
+                        <!-- Common Currencies -->
+                        <div class="col-md-4">
+                            <ul class="list-unstyled currency-list">
+                            <!-- <li>Australian Dollar <span>A$</span></li> -->
+                            <li class="active">Euro <span>€</span> <i class='bx bx-check'></i></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- <div class="col-md-4">
+                            <ul class="list-unstyled currency-list">
+                            <li>British Pound <span>£</span></li>
+                            <li>Swiss Franc <span>CHF</span></li>
+                            <li>Canadian Dollar <span>C$</span></li>
+                            </ul>
+                        </div> -->
+          
+        
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Price calculation
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:not(#terms)');
+            const basePrice = 250;
+            let currentPrice = basePrice;
+            
+            function updatePrice() {
+                let additionalCosts = 0;
+                
+                if (document.getElementById('childSeat').checked) additionalCosts += 15;
+                if (document.getElementById('gps').checked) additionalCosts += 8;
+                if (document.getElementById('additionalDriver').checked) additionalCosts += 10;
+                if (document.getElementById('insurance').checked) additionalCosts += 25;
+                
+                const totalBeforeDiscount = basePrice + additionalCosts;
+                const discount = Math.round(totalBeforeDiscount * 0.2);
+                const finalTotal = totalBeforeDiscount - discount;
+                
+                document.querySelector('.price-row:first-child span:last-child').textContent = `$${totalBeforeDiscount}`;
+                document.querySelector('.discount-row span:last-child').textContent = `-$${discount}`;
+                document.querySelector('.total span:last-child').textContent = `$${finalTotal}`;
+            }
+            
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updatePrice);
+            });
+            
+            // Form validation
+            document.getElementById('driverForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Driver details saved successfully!');
+            });
+            
+            // Book now button
+            document.querySelector('.btn-primary').addEventListener('click', function() {
+                const termsChecked = document.getElementById('terms').checked;
+                if (!termsChecked) {
+                    alert('Please accept the Terms & Conditions to proceed.');
+                    return;
+                }
+                alert('Booking confirmed! You will receive a confirmation email shortly.');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    position: relative;
+}
+.car-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.car-image-container {
+    background: var(--gray-light);
+    padding: 30px;
+    text-align: center;
+}
+
+.car-image {
+    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+  }
+
+.car-image i {
+    font-size: 4rem;
+    color: var(--gray-dark);
+    opacity: 0.5;
+}
+
+.car-info {
+    padding: 25px;
+}
+
+.car-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.car-category {
+    display: inline-block;
+    background: var(--light-color);
+    color: var(--secondary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.car-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray-dark);
+    font-size: 0.875rem;
+}
+
+.feature-item i {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.included-section {
+    background: var(--gray-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.included-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.included-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.included-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: var(--gray-dark);
+}
+
+.included-item i {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+.rating-badge {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.step-item::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #e0e0e0;
+    z-index: 1;
+}
+
+.step-item:last-child::after {
+    display: none;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.step-number.active {
+    background: #3498db;
+    color: white;
+}
+
+.step-number.completed {
+    background: #27ae60;
+    color: white;
+}
+
+.step-title {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+
+.confirmation-alert {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.confirmation-alert i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.booking-sidebar {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 0;
+    position: sticky;
+    top: 20px;
+}
+
+.booking-header {
+    background: var(--gray-light);
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.booking-section {
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.booking-section:last-child {
+    border-bottom: none;
+}
+
+.booking-section h6 {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.datetime-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.datetime-info strong {
+    color: var(--dark-color);
+}
+
+.location-info {
+    color: var(--gray-dark);
+    font-size: 0.875rem;
+}
+
+.modify-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 0.875rem;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.modify-btn:hover {
+    color: var(--secondary-color);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price-row.total {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    border-top: 1px solid #dee2e6;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.discount-row {
+    color: #28a745;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.form-section {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.form-section h5 {
+    color: var(--dark-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-color);
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 168, 204, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.terms-text {
+    font-size: 0.75rem;
+    color: var(--gray-dark);
+    margin-top: 10px;
+}
+
+.terms-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.blocked-info {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.blocked-info h6 {
+    color: #856404;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .car-features {
+        justify-content: center;
+    }
+    
+    .included-features {
+        grid-template-columns: 1fr;
+    }
+}
